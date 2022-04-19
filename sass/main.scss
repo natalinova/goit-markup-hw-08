@@ -1,0 +1,22 @@
+@import './variables/variables';
+
+@mixin color($color) {
+  background: $color;
+}
+
+@import './components/basic/null';
+@import './components/basic/visually-hidden';
+@import './components/basic/container';
+
+@import './components/header/header';
+@import './components/basic/logo';
+@import './components/portfolio/button-list';
+@import './components/portfolio/portfolio-projects';
+@import './components/hero';
+@import './components/modal/modal-window';
+@import './components/modal/modal-form';
+@import './components/ourplus';
+@import './components/whatwedo';
+@import './components/team';
+@import './components/clients';
+@import './components/footer/footer';

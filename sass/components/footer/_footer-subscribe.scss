@@ -1,0 +1,22 @@
+.footer-subscribe {
+  margin-left: 93px;
+}
+
+.form-subscribe {
+  display: flex;
+}
+.form-subscribe__item {
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: var(--color-white);
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+@import '../buttons/footer-subscribe-button';

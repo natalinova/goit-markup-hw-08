@@ -1,0 +1,12 @@
+.button-list {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.button-list__item {
+  margin-right: 8px;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+@import '../buttons/portfolio-button';

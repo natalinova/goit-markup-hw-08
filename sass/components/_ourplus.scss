@@ -1,0 +1,43 @@
+@import '../components/basic/section';
+.ourplus {
+  display: flex;
+}
+.ourplus__item {
+  width: 270px;
+  margin-left: 30px;
+  margin-bottom: 0;
+  text-align: justify;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+.ourplus-block__head {
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.ourplus-block__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.71;
+  color: var(--grey-text);
+}
+.ourplus-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--background-first);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.ourplus-block__image {
+  width: 70px;
+  height: 70px;
+}
