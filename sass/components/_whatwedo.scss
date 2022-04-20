@@ -1,5 +1,8 @@
 .whatwedo {
   padding-bottom: 94px;
+  @media screen and(max-width:1139px) {
+    display: none;
+  }
 }
 .whatwedo__head {
   margin-bottom: 50px;
