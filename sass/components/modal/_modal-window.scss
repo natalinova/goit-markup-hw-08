@@ -9,14 +9,13 @@
   opacity: 1;
   visibility: visible;
   transition: opacity var(--time), visibility var(--time);
+  overflow-y: scroll;
 }
 @import '../basic/is-hidden';
 
 .modal {
   position: absolute;
   padding: 40px;
-  width: 528px;
-  height: 581px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -24,5 +23,14 @@
   border-radius: 2px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  @media screen and (min-width: 480px), (max-width: 480px) {
+    width: 450px;
+    height: 609px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 @import '../buttons/modal-close';

@@ -1,13 +1,24 @@
 .modal-form {
-  width: 448px;
+  @media screen and (min-width: 480px) {
+    width: 370px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+  }
+
   text-align: center;
 }
 .modal-form__head {
   font-size: 20px;
   font-weight: 700;
-  line-height: 1.15;
   text-align: center;
   margin-bottom: 12px;
+  @media screen and (min-width: 480px) {
+    line-height: 1.5;
+  }
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 @import './modal-block';
 @import './modal-checkbox';

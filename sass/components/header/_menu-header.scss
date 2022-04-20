@@ -1,0 +1,41 @@
+@import '../buttons/header_button';
+.header-button .header-button__open-menu {
+  display: none;
+}
+.header-button .header-button__close {
+  display: block;
+}
+.header-button.is-open .header-button__close {
+  display: none;
+}
+.header-button.is-open .header-button__open-menu {
+  display: block;
+}
+
+.head-menu {
+  display: inline-flex;
+  justify-content: space-between;
+  background-color: var(--color-white);
+  &.is-open {
+    display: block;
+    @media screen and (max-width: 767px) {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 48px 40px;
+    }
+  }
+}
+.head-menu__navigation,
+.head-menu__contacts {
+  display: flex;
+}
+.head-menu__navigation {
+  display: flex;
+}
+.head-menu__contacts {
+  margin-left: 95px;
+  justify-content: right;
+}

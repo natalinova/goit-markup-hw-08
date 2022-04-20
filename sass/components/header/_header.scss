@@ -1,9 +1,11 @@
 .header__container {
+  position: relative;
   display: flex;
   padding-top: 24px;
   padding-bottom: 24px;
   align-items: center;
 }
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -12,6 +14,8 @@
 .head-navigation {
   display: flex;
 }
+@import './menu-header';
+
 .head {
   display: flex;
   padding-left: 0;
@@ -21,7 +25,14 @@
 }
 
 .nav-adress {
-  display: flex;
+  @media screen and (min-wight: 768px) {
+    display: block;
+    text-align: right;
+  }
+  @media screen and (min-width: 1140px) {
+    display: flex;
+  }
+
   padding-left: 0;
   margin-left: auto;
 }

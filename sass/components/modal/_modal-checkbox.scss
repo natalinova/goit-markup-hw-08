@@ -38,6 +38,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (min-width: 480px), (max-width: 480px) {
+    font-size: 12px;
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+    }
+  }
 }
 .checkbox__url {
   color: var(--brand-color);
