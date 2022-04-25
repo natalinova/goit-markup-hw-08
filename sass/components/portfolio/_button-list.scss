@@ -2,11 +2,18 @@
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
 }
 .button-list__item {
   margin-right: 8px;
   &:first-child {
     margin-left: 0;
+    @media screen and(max-width:767px) {
+      margin-bottom: 15px;
+    }
   }
 }
 @import '../buttons/portfolio-button';

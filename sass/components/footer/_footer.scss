@@ -3,18 +3,49 @@
   padding-bottom: 60px;
   background-color: var(--background-dark);
 }
+.footer-mobile {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    align-items: baseline;
+  }
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+    width: 50%;
+    justify-content: space-between;
+  }
+}
+
 .footer-all .logo {
   display: inline-block;
   margin-bottom: 20px;
 }
 .footer-adress {
   flex-grow: 1;
+  text-align: center;
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: auto;
+    flex-grow: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 @import './footer-adress';
 
 .footer {
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  flex-direction: column;
+  @media screen and (min-width: 1199px) {
+    flex-direction: row;
+    align-items: baseline;
+  }
 }
 @import './footer-social';
 @import './footer-subscribe';

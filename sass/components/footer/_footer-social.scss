@@ -1,5 +1,12 @@
 .footer-social {
-  margin-left: 70px;
+  margin-left: 0;
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      flex-grow: 1;
+    }
+  }
 }
 .footer-social__title,
 .footer-subscribe__title {
@@ -8,4 +15,8 @@
   color: var(--color-white);
   text-transform: uppercase;
   margin-bottom: 20px;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }

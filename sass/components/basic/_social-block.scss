@@ -8,10 +8,10 @@
   background-repeat: no-repeat;
   background-position: center;
   transition: background-color var(--time);
-  &:hover .social-block__icon {
+  &:hover .socials__icon {
     fill: var(--color-white);
   }
-  &:focus .social-block__icon {
+  &:focus .socials__icon {
     fill: var(--color-white);
   }
   &:hover {

@@ -12,4 +12,8 @@
   letter-spacing: 00.06em;
   cursor: pointer;
   border: transparent;
+  margin-top: 20px;
+  @media screen and (min-width: 1199px) {
+    margin-top: 0px;
+  }
 }

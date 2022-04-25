@@ -1,43 +1,101 @@
 @import '../buttons/header_button';
-.header-button .header-button__open-menu {
-  display: none;
-}
+// .header-button .header-button__open-menu {
+//   display: none;
+// }
+// .header-button .header-button__close {
+//   display: block;
+// }
 .header-button .header-button__close {
-  display: block;
+  display: none;
 }
 .header-button.is-open .header-button__close {
-  display: none;
+  display: block;
 }
 .header-button.is-open .header-button__open-menu {
-  display: block;
+  display: none;
 }
 
 .head-menu {
-  display: inline-flex;
-  justify-content: space-between;
-  background-color: var(--color-white);
-  &.is-open {
-    @media screen and (max-width: 767px) {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      padding: 48px 40px;
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 48px 40px;
+    border: 1px solid var(--second-grey);
+    background-color: var(--color-white);
+    &.is-open {
+      display: block;
     }
   }
-  @media screen and(min-width:768px) {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.head-menu__navigation,
+.head-menu__contacts {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.head-menu__navigation {
+  @media screen and (max-width: 767px) {
+    font-size: 40px;
+    margin-bottom: 302px;
+    line-height: 1.175;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+  }
+}
+
+.head-menu__contacts {
+  margin-bottom: 64px;
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
-.head-menu__navigation,
-.head-menu__contacts {
-  display: flex;
+.head-menu__phone {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  color: var(--grey-text);
+  &:focus,
+  &:hover {
+    color: var(--brand-color);
+  }
 }
-.head-menu__navigation {
-  display: flex;
+.head-menu__mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16px;
+  color: var(--grey-text);
 }
-.head-menu__contacts {
-  margin-left: 95px;
-  justify-content: right;
+.head-menu__block {
+  margin-bottom: 32px;
+}
+.head-menu__socials {
+  display: flex;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.head-menu__socials-item {
+  color: var(--grey-text);
+  font-size: 18px;
+  line-height: 1.22;
+  padding: 0 10px;
+}
+.head-menu__socials-item:not(:first-child) {
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
+}
+.head-menu__socials-link {
+  color: var(--grey-text);
+  &:hover,
+  &:focus {
+    color: var(--brand-color);
+  }
 }
