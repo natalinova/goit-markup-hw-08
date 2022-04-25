@@ -47,11 +47,9 @@
   }
   &:last-child {
     @media screen and (max-width: 767px) {
-      margin-bottom: 302px;
+      margin-bottom: 0;
     }
   }
-}
-.head__item {
   @media screen and (min-width: 768px) {
     margin-right: 50px;
   }
@@ -117,11 +115,9 @@
 }
 
 .nav-adress__icon-mail {
-  @media screen and (min-width: 768px) {
-    color: currentColor;
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    transition: fill var(--time), color var(--time);
-  }
+  color: currentColor;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  transition: fill var(--time), color var(--time);
 }

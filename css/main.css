@@ -206,6 +206,7 @@ ul {
     padding: 48px 40px;
     border: 1px solid var(--second-grey);
     background-color: var(--color-white);
+    z-index: 2;
   }
   .head-menu.is-open {
     display: block;
@@ -331,7 +332,7 @@ ul {
 
 @media screen and (max-width: 767px) {
   .head__item:last-child {
-    margin-bottom: 302px;
+    margin-bottom: 0;
   }
 }
 
@@ -403,14 +404,12 @@ ul {
   transition: color var(--time);
 }
 
-@media screen and (min-width: 768px) {
-  .nav-adress__icon-mail {
-    color: currentColor;
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    transition: fill var(--time), color var(--time);
-  }
+.nav-adress__icon-mail {
+  color: currentColor;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  transition: fill var(--time), color var(--time);
 }
 
 .logo {

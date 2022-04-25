@@ -25,6 +25,7 @@
     padding: 48px 40px;
     border: 1px solid var(--second-grey);
     background-color: var(--color-white);
+    z-index: 2;
     &.is-open {
       display: block;
     }
