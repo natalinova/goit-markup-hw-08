@@ -1,19 +1,25 @@
 .footer-all {
   padding-top: 60px;
   padding-bottom: 60px;
+  min-width: 480px;
   background-color: var(--background-dark);
 }
 .footer-mobile {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
   @media screen and (min-width: 768px) {
     flex-direction: row;
     align-items: baseline;
   }
-  @media screen and (max-width: 1199px) {
+  @media screen and(min-width:768px) and (max-width: 1199px) {
+    display: flex;
+    align-items: baseline;
     margin-bottom: 60px;
     width: 100%;
     justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    width: 100%;
   }
 }
 
@@ -34,6 +40,7 @@
   }
   @media screen and (min-width: 1200px) {
     text-align: left;
+    width: auto;
   }
 }
 @import './footer-adress';

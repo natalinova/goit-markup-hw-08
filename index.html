@@ -18,11 +18,13 @@
 <body >
     <!--Заголовок сайту  - header-->
 <header class="header">
-    <div class="container header__container">
-        <a class="logo" href=""><span class="logo__first">Web</span>Studio</a>
     
-
-        <div class="head-menu is-open" id="menu-container" data-menu>
+    <div class="container header__container">
+        <div class="logo-block">
+            <a class="logo" href=""><span class="logo__first">Web</span>Studio</a>
+        </div>
+        <div class="head-menu " id="menu-container" data-menu>
+<nav>
             <div class="head-menu__navigation">
         <ul class="head">
             <li class="head__item">
@@ -32,8 +34,7 @@
             <li class="head__item "><a class="head__link" href="">Контакты</a></li>
         </ul>
     </div>
-    </nav>
-            <div > 
+</nav>
             <ul class="nav-adress">
                 <li class="nav-adress__item ">
                     <a class="nav-adress__link" lang="en" href="mailto:info@devstudio.com"> <svg class="nav-adress__icon-mail">
@@ -50,10 +51,11 @@
                 <li class="head-menu__block" >
                     <a class="head-menu__phone" href="tel:+380961111111">  +38 096 111 11 11</a>
                 </li >
+                <li class="head-menu__block">
                 <a class="head-menu__mail" lang="en" href="mailto:info@devstudio.com"> info@devstudio.com</a>
                 </li>
             </ul>
-        </div>
+        
         <ul class="head-menu__socials">
             <li class="head-menu__socials-item">
                 <a class="head-menu__socials-link" href="" target="_blank" rel="noreferrer noopener">Instagram</a>
@@ -69,15 +71,15 @@
             </li>
         </ul>
     </div>
-    <button type="button" class="header-button is-open" aria-expanded="false" aria-controls="menu-container"
+    <button type="button" class="header-button" aria-expanded="false" aria-controls="menu-container"
         data-menu-button>
         <svg width='40' height='40' aria-label="перемикач мобільного меню">
             <use class="header-button__close" href='./images/icons.svg#icon-close_40px'></use>
             <use class="header-button__open-menu" href='./images/icons.svg#icon-menu_40px'></use>
         </svg>
     </button>
+    </div>
 </header>
-
 <main>
     <!-- Блок 1 - замовлення послуги- Герой -->
     <section class="hero">
@@ -327,7 +329,7 @@
                 <span class="modal-block__icon">
                     <svg class="modal-block__svg"> <use href="./images/icons.svg#icon-head"  ></use> </svg>
                 </span>
-            </div>
+            </div> 
             <div class="modal-block">
                 <label class="modal-block__label" for="phone">Телефон</label>
                 <input class="modal-block__item" type="tel" name="phone" id="phone"  />
