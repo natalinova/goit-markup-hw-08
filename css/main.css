@@ -161,7 +161,7 @@ ul {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  z-index: 50;
+  z-index: 3;
   position: absolute;
   top: 21px;
   right: 21px;
@@ -671,7 +671,8 @@ ul {
   opacity: 1;
   visibility: visible;
   transition: opacity var(--time), visibility var(--time);
-  overflow-y: scroll;
+  overflow: scroll;
+  z-index: 4;
 }
 
 .is-hidden {
@@ -695,7 +696,7 @@ ul {
   .modal {
     width: 450px;
     height: 609px;
-    overflow-x: scroll;
+    overflow: scroll;
   }
 }
 
@@ -727,6 +728,7 @@ ul {
 }
 
 .modal-form {
+  position: relative;
   text-align: center;
 }
 

@@ -9,7 +9,8 @@
   opacity: 1;
   visibility: visible;
   transition: opacity var(--time), visibility var(--time);
-  overflow-y: scroll;
+  overflow: scroll;
+  z-index: 4;
 }
 @import '../basic/is-hidden';
 
@@ -27,7 +28,7 @@
   @media screen and (max-width: 1199px) {
     width: 450px;
     height: 609px;
-    overflow-x: scroll;
+    overflow: scroll;
   }
 
   @media screen and (min-width: 1200px) {
