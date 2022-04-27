@@ -663,7 +663,8 @@ ul {
 .backdrop {
   position: fixed;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
@@ -673,6 +674,14 @@ ul {
   transition: opacity var(--time), visibility var(--time);
   overflow: scroll;
   z-index: 4;
+}
+
+@media screen and (min-width: 480px) {
+  .backdrop {
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
 }
 
 .is-hidden {
@@ -690,22 +699,14 @@ ul {
   background-color: var(--color-white);
   border-radius: 2px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  width: 450px;
+  max-width: 450px;
   height: 609px;
   overflow: scroll;
 }
 
-@media screen and (min-width: 768px) {
-  .modal {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    max-width: 528px;
     height: 581px;
   }
 }
@@ -732,6 +733,7 @@ ul {
 
 .modal-form {
   position: relative;
+  max-width: 370px;
   text-align: center;
 }
 
