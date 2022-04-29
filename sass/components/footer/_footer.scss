@@ -1,11 +1,11 @@
 .footer-all {
   padding-top: 60px;
   padding-bottom: 60px;
-  min-width: 480px;
+  // min-width: 480px;
   background-color: var(--background-dark);
 }
 .footer-mobile {
-  // display: flex;
+  margin-bottom: 60px;
   @media screen and (min-width: 768px) {
     flex-direction: row;
     align-items: baseline;
